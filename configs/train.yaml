@@ -8,7 +8,7 @@ defaults:
   - model: null
   - callbacks: default
   - logger: default  # set logger here or use command line (e.g. `python train.py logger=tensorboard`)
-  - trainer: default
+  - trainer: ddp # default
   - paths: default
   - extras: default
   - hydra: default

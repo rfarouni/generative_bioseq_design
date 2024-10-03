@@ -3,5 +3,5 @@ data_dir: ${paths.data_dir}/aav9_6mer
 dataset_name: "dataset.tsv"
 batch_size: 512 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
 train_val_test_split: [0.7, 0.15, 0.15]
-num_workers: 25
+num_workers: 20
 pin_memory: True
