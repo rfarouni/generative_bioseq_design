@@ -1,0 +1,29 @@
+_target_: src.models.aav_module.AAVLitModule
+
+optimizer:
+  _target_: torch.optim.AdamW
+  _partial_: true
+  lr: 0.001
+  weight_decay: 0.01
+
+scheduler: null
+
+# scheduler:
+#   _target_: torch.optim.lr_scheduler.ReduceLROnPlateau
+#   _partial_: true
+#   mode: min
+#   factor: 0.1
+#   patience: 3
+
+net:
+  _target_: src.models.components.sequence_attention_encoder.SequenceAttentionEncoder
+  d_model: 120
+  n_head: 1
+  n_layer: 1
+  dim_feedforward: 2048
+  dropout: 0.02
+  bias: False
+  layer_norm_eps: 1e-5
+
+# compile model for faster training with pytorch 2.0
+compile: false
