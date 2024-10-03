@@ -5,7 +5,7 @@ defaults:
   - data: null # choose datamodule with `test_dataloader()` for evaluation
   - model: null
   - logger: null
-  - trainer: ddp
+  - trainer: default
   - paths: default
   - extras: default
   - hydra: default
