@@ -13,6 +13,7 @@ Uses lightnining hydra for configuration
 
 https://github.com/ashleve/lightning-hydra-template
 
+
 ## Installation
 
 #### Pip
@@ -55,4 +56,9 @@ You can override any parameter from command line like this
 python src/train.py trainer.max_epochs=20 data.batch_size=64
 ```
 
+## Analysis Notebooks
 
+1. [notebooks/1_examine_aav9_model.ipynb](https://github.com/rfarouni/generative_bioseq_design/blob/main/notebooks/1_examine_aav9_model.ipynb)
+2. [notebooks/2_classification_with_attention.ipynb](https://github.com/rfarouni/generative_bioseq_design/blob/main/notebooks/2_classification_with_attention.ipynb)
+   
+   
